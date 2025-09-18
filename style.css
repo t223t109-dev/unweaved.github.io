@@ -5,15 +5,17 @@
         background-image: url('images/moi.jpg'); /* 1. 画像ファイルを指定 */
     background-size: cover;          /* 2. 画面全体を覆うように画像を拡大・縮小 */
     background-repeat: no-repeat;    /* 3. 画像の繰り返し表示をしない */
-    background-position: center;     /* 4. 画像を中央に配置 */
-    background-attachment: fixed;    /* 5. スクロールしても背景画像を固定する */
-
+    background-position: center;     /* 4. 画像を中央に配置 */;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
             line-height: 1.7;
             color: black;
-            background-color: #fff;
+            background-color: #787878;
             margin: 0;
             padding: 40px 20px;
+        }
+        #target{
+            position: relative;
+            
         }
 
         .container {
@@ -59,11 +61,14 @@
         }
 
         .header-social .icon {
+          width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            
+            font-size: 2em; 
         }
 
         /* --- アーティストリスト --- */
@@ -73,7 +78,7 @@
             padding: 15px 0;
             margin-bottom: 40px;
             text-align: center;
-            word-spacing: 1.5em;
+            word-spacing: 2em;
         }
 
         /* --- 概要 --- */
@@ -139,7 +144,6 @@
             margin-top: 0;
             margin-bottom: 15px;
             border-bottom: 1px solid black;
-            
         }
 
         .guest-profile .guest-photo {
